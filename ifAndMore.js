@@ -26,3 +26,4 @@ switch(num){
         console.log("Zbs");
         break;
 }
+
