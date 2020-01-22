@@ -50,20 +50,12 @@
 let arr = [1,2,3,4,5];
 
 
-arr.forEach(function(item, i, mass){
+arr.forEach((item, i, mass)=>{
     console.log(i + ":" + item + "(Masiv :" + mass + ')');
 })
 // for(let i = 0;i < arr.length;i++){
 //    console.log(arr[i]);
 // };
-let arr = [1,2,3,4,5];
-
-
-arr.forEach(function(item, i, mass){
-    console.log(i + ":" + item + "(Masiv :" + mass + ')');
-})
-  
-
 // console.log(arr);
 
 // mass = [1,3,4,6,7];
