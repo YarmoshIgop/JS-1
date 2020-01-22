@@ -26,14 +26,14 @@ let appDate = {
             let a = prompt("Введіть oбовязкову стaттю витрат цьоgo місяці",""),
                 b = prompt("Скільки обійдеться?","");
         
-            if( (typeof(a))==='string' && (typeof(a)) != null && (typeof(b)) != null 
-            && a!= '' && b != '' && a.lenght < 50 ){
+            if( (typeof(a))==='string' && (typeof(a)) !== null && (typeof(b)) !== null 
+            && a!== '' && b !== '' && a.lenght < 50 ){
                 
                 console.log("done");
         
                 appDate.expenses[a]=b;
             } else {
-                
+                return 0;
             }
         };
     },
@@ -53,7 +53,7 @@ let appDate = {
         };
     },
     checkSavings : function(){
-        if (appDate.savings == true ) {
+        if (appDate.savings === true ) {
             let save = + prompt ("Яка сума збережень?"," "),
                 percent = + prompt("Під який відсоток?","");
                 appDate.monthIncome = save/100/12 * percent;
@@ -79,9 +79,9 @@ let appDate = {
             appDate.income.forEach(function(item, num, mass){
                 console.log(num+1 + ":" + item + "Способы доп. заработка::" + mass + '');
                 })
+       const name = 'IGOP';        
+       console.log(`${name} - lox`);     
         
-        
-            
         // appDate.income = items.split (" , ");
         // appDate.income.push(prompt("Може ще щось?"));
         // appDate.income.sort();}
