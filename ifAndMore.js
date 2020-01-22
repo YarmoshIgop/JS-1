@@ -3,14 +3,14 @@
 let num=50;
 
 if(num<49){
-    console.log("Neverno")
+    console.log("ne clown")
 } else if(num>100){
-    console.log("Mnogo")
+    console.log("pochti clown")
 }else{
-    console.log("Verno")
+    console.log("clown")
 }
 
-(num==50) ? console.log("Verno"): console.log("Neverno");
+(num==50) ? console.log("moskal"): console.log("proklyatiy");
 
 switch(num){
     case num < 49 :
